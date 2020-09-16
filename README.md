@@ -32,25 +32,9 @@ Use any one of the installation methods listed below depending on which framewor
 To install the master version with latest fixes and features
 
 ```
-cordova plugin add https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git
+cordova plugin add https://github.com/dimsonggg/cordova-plugin-camera-preview.git
 
-ionic cordova plugin add https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git
-
-meteor add cordova:cordova-plugin-camera-preview@https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git#[latest_commit_id]
-
-<plugin spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" source="git" />
-```
-
-or if you want to use the last released version on npm
-
-```
-cordova plugin add cordova-plugin-camera-preview
-
-ionic cordova plugin add cordova-plugin-camera-preview
-
-meteor add cordova:cordova-plugin-camera-preview@X.X.X
-
-<gap:plugin name="cordova-plugin-camera-preview" />
+ionic cordova plugin add https://github.com/dimsonggg/cordova-plugin-camera-preview.git
 ```
 
 #### iOS Quirks
