@@ -55,12 +55,14 @@
     if (toBack) {
       // display the camera below the webview
 
-      // make transparent
-      self.webView.opaque = NO;
+      UIView *mainView = self.webView.superview.subviews[0];
+      self.webView.opaque = false;
       self.webView.backgroundColor = [UIColor clearColor];
+      mainView.opaque = false;
+      mainView.backgroundColor = [UIColor clearColor];
 
       [self.webView.superview addSubview:self.cameraRenderController.view];
-      [self.webView.superview bringSubviewToFront:self.webView];
+      [self.webView.superview bringSubviewToFront:mainView];
     } else {
       self.cameraRenderController.view.alpha = alpha;
       [self.webView.superview insertSubview:self.cameraRenderController.view aboveSubview:self.webView];
